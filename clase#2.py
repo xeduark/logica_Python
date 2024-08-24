@@ -52,7 +52,7 @@ def libros_por_ano(biblioteca, año):
     if not encontrado:
         print(f'No se encontraron libros publicados en el año {año}.')
     print()  # Línea en blanco para formato
-
+#MENU PARA LOS LIBROS
 def menu():
     while True:
         print("\nMenú de la Biblioteca:")
