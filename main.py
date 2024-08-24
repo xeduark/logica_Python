@@ -40,4 +40,4 @@ if __name__ == "__main__":
     print(despedida)
 #Jhonny
 
-#nos tomamos un perico
+#comemos Hamburguesa
