@@ -39,3 +39,5 @@ if __name__ == "__main__":
     despedida = despedirse(nombre)
     print(despedida)
 #Jhonny
+
+#nos tomamos un perico
