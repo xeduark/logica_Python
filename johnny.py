@@ -83,4 +83,50 @@ cantidad_vocales = contar_vocales(frase_usuario)
 print(f"La frase contiene {cantidad_vocales} vocales.")
 
 
+def calculadora():
+    while True:
+        print("\nCalculadora Básica")
+        print("Selecciona una operación:")
+        print("1. Sumar (+)")
+        print("2. Restar (-)")
+        print("3. Multiplicar (*)")
+        print("4. Dividir (/)")
+        print("5. Salir")
+
+        opcion = input("Elige una opción (1/2/3/4/5): ")
+
+        if opcion == '5':
+            print("¡Gracias por usar la calculadora! Hasta luego.")
+            break
+
+        if opcion in ('1', '2', '3', '4'):
+            try:
+                num1 = float(input("Ingresa el primer número: "))
+                num2 = float(input("Ingresa el segundo número: "))
+            except ValueError:
+                print("Entrada no válida. Por favor ingresa números válidos.")
+                continue
+
+            if opcion == '1':
+                resultado = num1 + num2
+                print(f"Resultado: {num1} + {num2} = {resultado}")
+            elif opcion == '2':
+                resultado = num1 - num2
+                print(f"Resultado: {num1} - {num2} = {resultado}")
+            elif opcion == '3':
+                resultado = num1 * num2
+                print(f"Resultado: {num1} * {num2} = {resultado}")
+            elif opcion == '4':
+                if num2 == 0:
+                    print("Error: No se puede dividir entre cero.")
+                else:
+                    resultado = num1 / num2
+                    print(f"Resultado: {num1} / {num2} = {resultado}")
+        else:
+            print("Opción no válida. Por favor elige una opción del 1 al 5.")
+
+# Iniciar la calculadora
+calculadora()
+
+
             
