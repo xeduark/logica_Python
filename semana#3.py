@@ -1,3 +1,4 @@
+
 biblioteca = {
     "Cien años de soledad": {"autor": "Gabriel García Márquez", "año": 1967, "disponible": True},
     "1984": {"autor": "George Orwell", "año": 1949, "disponible": True},
