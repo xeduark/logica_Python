@@ -58,4 +58,29 @@ def juego_adivinanza():
 # Iniciar el juego
 juego_adivinanza()
 
+
+def contar_vocales(frase):
+    # Definir las vocales
+    vocales = "aeiouAEIOU"
+    contador_vocales = 0
+    indice = 0
+
+    # Usar un bucle while para recorrer la frase
+    while indice < len(frase):
+        # Verificar si el carácter actual es una vocal
+        if frase[indice] in vocales:
+            contador_vocales += 1
+        # Incrementar el índice para seguir con el siguiente carácter
+        indice += 1
+
+    return contador_vocales
+
+# Solicitar al usuario que ingrese una frase
+frase_usuario = input("Ingresa una frase: ")
+
+# Llamar a la función y mostrar el resultado
+cantidad_vocales = contar_vocales(frase_usuario)
+print(f"La frase contiene {cantidad_vocales} vocales.")
+
+
             
