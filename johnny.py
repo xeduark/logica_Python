@@ -129,4 +129,29 @@ def calculadora():
 calculadora()
 
 
+def crear_lista_pares():
+    # Inicializar una lista vacía para almacenar los números pares
+    lista_pares = []
+
+    # Inicializar un contador en 1
+    numero = 1
+
+    # Usar un bucle while para recorrer los números del 1 al 100
+    while numero <= 100:
+        # Verificar si el número es par
+        if numero % 2 == 0:
+            # Agregar el número par a la lista
+            lista_pares.append(numero)
+        
+        # Incrementar el contador en 1
+        numero += 1
+
+    return lista_pares
+
+# Llamar a la función y mostrar la lista de números pares
+numeros_pares = crear_lista_pares()
+print("Números pares entre 1 y 100:", numeros_pares)
+
+
+
             
