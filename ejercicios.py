@@ -104,7 +104,7 @@ print("Ejercicio 10:")
 
 #Crea un programa que pida al usuario dos números y luego calcule su promedio.
 print("Ingresa dos numeros para calcular su promedio")
-numero_p1 = int(input("Ingresa el primer numero: ")
+numero_p1 = int(input("Ingresa el primer numero: "))
 numero_p2 = int(input("Ingresa el segundo numero: "))
 #Para calcular el promedio sumamos los numeros y luego lo dividimos entre la cantidad de numeros.
 promedio = (numero_p1 + numero_p2) / 2
